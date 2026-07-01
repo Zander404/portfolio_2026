@@ -1,8 +1,8 @@
 import NavBar from "@/components/navbar";
 import { HeroSection } from "./sections/hero";
-import AboutMe from "./sections/about_me";
-import { Text } from "@/components/retroui/Text";
-import Services from "./sections/services";
+import { ExperienceSection } from "./sections/experience";
+import ServicesSection from "./sections/services";
+import AboutMeSection from "./sections/about_me";
 
 export default function Home() {
   return (
@@ -18,14 +18,16 @@ export default function Home() {
 
 
         <section id="services" className="w-full min-h-[55vh]">
-          <Services />
+          <ServicesSection />
         </section>
 
 
         <section id="about_me" className=" w-full min-h-[80%]">
-          <AboutMe />
+          <AboutMeSection />
         </section>
-
+        <section id="experience" className="w-full min-h-[80%]">
+          <ExperienceSection />
+        </section>
         <section id="projects">
         </section>
 
