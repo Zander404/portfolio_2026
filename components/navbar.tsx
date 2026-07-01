@@ -9,6 +9,8 @@ export default function NavBar() {
 
   const links = [
     { href: "#hero", title: "Inicio" },
+    // { href: "#service", title: "Serviços" },
+    // { href: "#profissional_experience", title: "Experiência" },
     { href: "#about_me", title: "Sobre mim" },
     { href: "#projects", title: "Projetos" },
     { href: "#contact_us", title: "Contato" },

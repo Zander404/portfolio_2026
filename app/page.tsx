@@ -1,13 +1,13 @@
 import NavBar from "@/components/navbar";
 import { HeroSection } from "./sections/hero";
 import { ExperienceSection } from "./sections/experience";
-import ServicesSection from "./sections/services";
-import AboutMeSection from "./sections/about_me";
+import { ServicesSection } from "./sections/services";
+import { AboutMeSection } from "./sections/about_me";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center">
-      <NavBar />
 
       <main className="flex flex-col items-center justify-center w-full max-w-[95%] min-h-screen bg-background m-4">
 
@@ -25,9 +25,13 @@ export default function Home() {
         <section id="about_me" className=" w-full min-h-[80%]">
           <AboutMeSection />
         </section>
+
+
         <section id="experience" className="w-full min-h-[80%]">
           <ExperienceSection />
         </section>
+
+
         <section id="projects">
         </section>
 
@@ -36,9 +40,8 @@ export default function Home() {
         </section>
 
 
-
-
       </main>
+
     </div>
   );
 }

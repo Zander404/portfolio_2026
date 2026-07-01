@@ -3,7 +3,7 @@ import RetroTimeLine from "@/components/timeline";
 import Image from "next/image";
 
 
-export default function AboutMeSection() {
+export function AboutMeSection() {
 
   return (
     <>

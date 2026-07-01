@@ -4,7 +4,7 @@ import { Text } from "@/components/retroui/Text";
 import { BotIcon, Bug, CloudBackup, Cog, Computer, LucideComputer, Monitor, WebcamIcon } from "lucide-react";
 import { title } from "process";
 
-export default function ServicesSection() {
+export function ServicesSection() {
 
 
   const servicos = [
