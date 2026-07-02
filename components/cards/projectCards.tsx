@@ -20,22 +20,16 @@ export function ProjectCard(props: ProjectCardProps) {
   const tagColors: Record<string, string> = {
     "Landing Page": "bg-blue-400 text-black",
     "Sistema Web": "bg-amber-400 text-black",
-    "E-Comerce": "bg-lime-400 text-black",
+    "E-Commerce": "bg-lime-400 text-black",
     "CyberSegurança": "bg-rose-900 text-white",
     "IA & RAG": "bg-orange-300 text-black",
     "Hospedagem & Manutenção": "text-white bg-black"
   }
   return (
     <div
-      /* 
-        CORRIGIDO: 
-        1. Mudado para flex-col no mobile e flex-row no desktop.
-        2. Aplica md:flex-row-reverse automaticamente se o index for ímpar.
-      */
       className={`flex flex-col w-full border-4 border-black bg-background rounded-none p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-1 hover:-translate-y-1 gap-6 md:gap-8 ${isEven ? "md:flex-row" : "md:flex-row-reverse"
         }`}
     >
-      {/* METADE TEXTO: w-full no mobile e md:w-1/2 no desktop */}
       <div className="w-full md:w-1/2 flex flex-col gap-3 justify-center">
 
         {/* 1. BADGES / TAGS SUPERIORES */}
@@ -75,7 +69,6 @@ export function ProjectCard(props: ProjectCardProps) {
       </div>
 
       {/* METADE IMAGEM: w-full no mobile e md:w-1/2 no desktop */}
-      {/* CORRIGIDO: Travado o tamanho da caixa de visualização em h-[250px] md:h-auto para a imagem não sumir */}
       <div className="w-full md:w-1/2 h-[250px] md:h-auto min-h-[250px] relative flex items-center justify-center">
         <div className="relative w-full h-full">
 

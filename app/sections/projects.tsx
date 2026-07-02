@@ -21,7 +21,7 @@ export function ProjectSection() {
     {
       title: "teste",
       description: "In 2022, Sweatcoin became the world's most downloaded Health & Fitness App. One of the features that helped to gain more than 66M downloads that year was 'Scratch The Prize'.",
-      tags: ["E-Comerce", "Hospedagem & Manutenção"],
+      tags: ["E-Commerce", "Hospedagem & Manutenção"],
       image: "./next.svg",
       link: "https://github.com"
     },

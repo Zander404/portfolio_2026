@@ -3,6 +3,7 @@ import { ExperienceSection } from "./sections/experience";
 import { ServicesSection } from "./sections/services";
 import { AboutMeSection } from "./sections/about_me";
 import { ProjectSection } from "./sections/projects";
+import ContactSection from "./sections/contact";
 
 export default function Home() {
   return (
@@ -35,12 +36,10 @@ export default function Home() {
           <ProjectSection />
         </section>
 
-
-        <section id="contact_us">
-        </section>
-
-
       </main>
+      <section id="contact_us" className="w-full min-h-[80vsh]">
+        <ContactSection />
+      </section>
 
     </div>
   );
