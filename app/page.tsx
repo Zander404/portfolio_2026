@@ -1,9 +1,8 @@
-import NavBar from "@/components/navbar";
 import { HeroSection } from "./sections/hero";
 import { ExperienceSection } from "./sections/experience";
 import { ServicesSection } from "./sections/services";
 import { AboutMeSection } from "./sections/about_me";
-import Footer from "@/components/footer";
+import { ProjectSection } from "./sections/projects";
 
 export default function Home() {
   return (
@@ -27,12 +26,13 @@ export default function Home() {
         </section>
 
 
-        <section id="experience" className="w-full min-h-[80%]">
+        <section id="profissional_experience" className="w-full min-h-[80%]">
           <ExperienceSection />
         </section>
 
 
-        <section id="projects">
+        <section id="projects" className="w-full min-h[80%]">
+          <ProjectSection />
         </section>
 
 

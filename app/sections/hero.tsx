@@ -34,7 +34,6 @@ export function HeroSection() {
       </div>
 
       {/* PHOTO WITH FRAME & FLOATING ELEMENTS CONTAINER */}
-      {/* CORRIGIDO: Mudado de w-1/2 fixo para w-full no mobile e md:w-1/2 no desktop */}
       <div className="w-full md:w-1/2 flex items-center justify-center">
         <div className="relative w-full max-w-[400px] h-[400px] flex items-center justify-center">
 
