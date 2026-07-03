@@ -42,7 +42,7 @@ export function ServicesSection() {
 
   return (
     <>
-      <div className="bg-background border rounded-md p-3 my-8 w-full h-full">
+      <div className="bg-background border rounded-md p-3 w-full h-full">
 
         {/* TEXTO DE APRESENTAÇÂO DOS SERVIÇOS */}
         <div className="grid grid-row-3 gap-2  ">
