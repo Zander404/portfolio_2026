@@ -62,18 +62,20 @@ export function ProjectSection() {
       </div>
 
       {/* CONTAINER DO LOOP DE CARDS */}
-      <div className="w-full flex flex-col gap-8 mt-8">
-        {projects_data.map((data, index) => (
-          <ProjectCard
-            key={index}
-            index={index}
-            title={data.title}
-            description={data.description}
-            tags={data.tags}
-            link={data.link}
-            image={data.image}
-          />
-        ))}
+      <div className="h-240 py-4 overflow-y-auto scroll-fade scrollbar-thumb-primary ">
+        <div className="w-full flex flex-col gap-8 mt-8">
+          {projects_data.map((data, index) => (
+            <ProjectCard
+              key={index}
+              index={index}
+              title={data.title}
+              description={data.description}
+              tags={data.tags}
+              link={data.link}
+              image={data.image}
+            />
+          ))}
+        </div>
       </div>
 
     </div>
