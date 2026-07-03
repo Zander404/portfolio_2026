@@ -5,26 +5,42 @@ export function ProjectSection() {
 
   const projects_data = [
     {
-      title: "teste",
-      description: "In 2022, Sweatcoin became the world's most downloaded Health & Fitness App. One of the features that helped to gain more than 66M downloads that year was 'Scratch The Prize'.",
-      tags: ["Landing Page", "IA & RAG", "Sistema Web"],
-      image: "./next.svg",
-      link: "https://github.com"
+      title: "Doulas",
+      description: "Sistema Web desenvolvido para centralizar e dar visibilidade ao trabalho das Doulas no estado de Goiás. A plataforma combina uma vitrine pública para divulgação de serviços especializados com um módulo administrativo focado no credenciamento e validação de profissionais da área.",
+      tags: ["Sistema Web", "Blog", "Hospedagem & Manutenção"],
+      image: "/projects/doulas_projects.webp",
+      link: "https://adoulas.com"
     },
     {
-      title: "teste",
-      description: "In 2022, Sweatcoin became the world's most downloaded Health & Fitness App. One of the features that helped to gain more than 66M downloads that year was 'Scratch The Prize'.",
-      tags: ["Hospedagem & Manutenção", "Sistema Web", "CyberSegurança"],
-      image: "./next.svg",
-      link: "https://github.com"
+      title: "Sistema de Laudos para Lavagem de Caminhão",
+      description: "Aplicação Full Stack desenvolvida com Spring Boot e Next.js para gerenciamento e emissão de laudos de higienização de caminhões. A plataforma automatiza o controle de frotas vinculando veículos, motoristas e empresas, monitorando resíduos transportados e insumos químicos. Inclui autenticação segura, assinatura digital interativa na tela, histórico operacional e ordens de serviço dinâmicas. Responsável por todo o ciclo de DevOps, incluindo a arquitetura de implantação em nuvem, configuração do pipeline e manutenção preventiva contínua do ecossistema.",
+      tags: ["Sistema Web", "FullStack", "Dev Ops", "Hospedagem & Manutenção"],
+      image: "/projects/laudos_projects.png",
+      link: "https://github.com/criasltda/laudos"
     },
     {
-      title: "teste",
-      description: "In 2022, Sweatcoin became the world's most downloaded Health & Fitness App. One of the features that helped to gain more than 66M downloads that year was 'Scratch The Prize'.",
-      tags: ["E-Commerce", "Hospedagem & Manutenção"],
-      image: "./next.svg",
-      link: "https://github.com"
+      title: "Aluguei Mudei",
+      description: " Desenvolvimento da API do ecossistema Back-End com FastAPI para uma PropTech focada em locação residencial e comercial. O ecossistema gerencia o catálogo detalhado de imóveis, precificações dinâmicas e o ciclo de vida de contratos de locação. Conta com uma arquitetura escalável para controle de inquilinato e auditoria do histórico de locações de cada ativo imobiliário.",
+      tags: ["Sistema Web", "BackEnd", "Hospedagem & Manutenção"],
+      image: "/projects/aluguei_mudei_projects.png",
+      link: "https://github.com/criasltda/aluguei_mudei"
     },
+    {
+      "title": "Iniciação Científica: Viés Racial em NLP Jurídico",
+      "description": "Projeto de Pesquisa & Desenvolvimento (P&D) focado na quantificação e análise de viés racial em modelos de Aprendizado de Máquina aplicados a documentos de texto jurídico. O estudo resultou na produção de artigos técnicos e na validação de hipóteses metodológicas sobre ética, equidade e auditoria de algoritmos de inteligência artificial.",
+      "tags": ["Pesquisa & Desenvolvimento", "AI Ethics", "NLP / PLN", "Machine Learning"],
+      "image": "/projects/ic_projects.png",
+      "link": "https://github.com/davi-ga/crawler-api/tree/xandy/matcher_rote"
+    },
+    {
+      title: "TCC: Análise de LLMs na Pecuária Leiteira",
+      description: "Estudo analítico e exploratório sobre a viabilidade e impacto da aplicação de Grandes Modelos de Linguagem (LLMs) no setor da pecuária leiteira. A pesquisa mapeou casos de uso práticos, gargalos de infraestrutura e desenvolveu um framework de avaliação para tomada de decisão tecnológica no agronegócio.",
+      tags: ["Data Science", "LLM & GenAI", "Análise Exploratória", "Agtech"],
+      image: "/projects/tcc_projects.png",
+      link: "https://github.com/Zander404/TCC_DairyColletor"
+    }
+
+
   ]
 
   return (

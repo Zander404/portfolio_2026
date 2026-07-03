@@ -58,7 +58,7 @@ export default function ContactSection() {
                 required
                 className="w-full border-3 border-black bg-white px-4 py-3 text-black font-medium text-sm appearance-none focus:outline-none focus:bg-white/20 transition-all rounded-none shadow-[2px_2px_0px_0px_#000] cursor-pointer"
               >
-                <option value="" disabled>Tipo Project</option>
+                <option value="" disabled>Tipo de Projeto</option>
                 <option value="web" className="bg-white text-black">Sistemas Web / Landing Page</option>
                 <option value="security" className="bg-white text-black">Cybersegurança / Pentest</option>
                 <option value="ia" className="bg-white text-black">IA & Automação RAG</option>

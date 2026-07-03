@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Button } from "./retroui/Button";
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 
 export default function NavBar() {
@@ -52,34 +52,34 @@ export default function NavBar() {
 
 
 
-        {/* MOBILE MENU */}
+        <div className="relative md:hidden">
+          {/* MOBILE MENU BUTTON */}
+          <Button
+            onClick={toggleMenu}
+            className="flex flex-col items-center justify-center border-2 text-center md:hidden"
+            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+          >
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </Button>
 
-        <Button onClick={toggleMenu}
-          className="flex items-center md:hidden flex-col border-2 text-center "
-          aria-label="Abrir menu">
-          <Menu />
-        </Button>
-
-        {/* MOBILE MENU (DROPDOWN) */}
-        {isOpen && (
-          <div className=" md:hidden mt-4 w-full border-4 border-black rounded-md bg-slate-50 p-6 flex flex-col">
-            <nav className="flex flex-col -z-52 gap-4 font-black text-lg">
-              {
-                links.map(({ href, title }, index) => (
-                  <Link key={title} href={href}>{title}</Link>
-                )
-                )
-              }
-
-            </nav>
-          </div>
-        )
-        }
-
-
-
-
-
+          {/* MOBILE MENU (DROPDOWN) */}
+          {isOpen && (
+            <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-md border-4 border-black bg-slate-50 p-6 md:hidden">
+              <nav className="flex flex-col gap-4 text-lg font-black">
+                {links.map(({ href, title }) => (
+                  <Link
+                    key={title}
+                    href={href}
+                    onClick={toggleMenu} // Fecha o menu automaticamente ao mudar de página
+                    className="hover:underline"
+                  >
+                    {title}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          )}
+        </div>
 
       </div>
     </div>
