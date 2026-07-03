@@ -1,12 +1,15 @@
+
 import { Text } from "@/components/retroui/Text";
 import Image from "next/image";
 
-
 export function AboutMeSection() {
+  // Adicionamos uma versão para limpar o cache. 
+  // Sempre que mudar a foto física, basta alterar o número da versão (ex: v=2 para v=3)
+  const avatarSrc = "/avatar.png";
 
   return (
     <div className="flex flex-col w-full h-full justify-center text-center md:text-left border-black border-4 bg-background rounded-md">
-      <div className="flex flex-col md:flex-row items-center p-6 gap-12">
+      <div className="flex flex-col md:flex-row items-center p-6  gap-12">
 
         {/* PHOTO WITH FRAME & FLOATING ELEMENTS CONTAINER */}
         <div className="relative w-full max-w-[400px] h-[400px] flex items-center justify-center">
@@ -20,7 +23,7 @@ export function AboutMeSection() {
               {/* BLACK SILHOUETTE SHADOW LAYER */}
               <div className="absolute inset-0 translate-x-2.5 translate-y-1.5 filter brightness-0 z-10 opacity-90">
                 <Image
-                  src="/avatar.png"
+                  src={avatarSrc}
                   alt=""
                   fill
                   sizes="340px"
@@ -32,7 +35,7 @@ export function AboutMeSection() {
               {/* MAIN GRAYSCALE FOREGROUND IMAGE LAYER */}
               <div className="absolute inset-0 filter grayscale z-20">
                 <Image
-                  src="/avatar.png"
+                  src={avatarSrc}
                   alt="Developer Profile"
                   fill
                   sizes="340px"
@@ -45,9 +48,6 @@ export function AboutMeSection() {
 
           </div>
         </div>
-
-
-
 
         {/* ABOUT ME TEXT */}
         <div className="flex flex-col gap-4 max-w-2xl">
@@ -63,7 +63,6 @@ export function AboutMeSection() {
             Movido pela curiosidade intelectual e pelo aprendizado contínuo, busco constantemente desafios complexos que envolvam arquitetura de software, otimização de sistemas e engenharia de dados. Estou sempre pronto para transformar problemas de negócios em códigos limpos, seguros e escaláveis.
           </Text>
 
-
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="border-2 border-black p-4 rounded-xl bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               <h3 className="font-bold text-black mb-2">🧠 Backend & Infra</h3>
@@ -77,9 +76,7 @@ export function AboutMeSection() {
         </div>
 
       </div>
-
-
     </div>
-  )
-
+  );
 }
+
